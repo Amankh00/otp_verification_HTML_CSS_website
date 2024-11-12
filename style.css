@@ -1,0 +1,162 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+h1
+{
+    /* color: rgb(238, 79, 105); */
+    color: cyan;
+}
+h1:hover
+{
+    transition: all 2s;
+    background-color:rgb(238, 79, 105);
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px 25px;
+}
+
+p:hover
+{
+    transition: all 2s;
+    color: rgb(150, 20, 20);
+    border-radius: 12px;
+}
+
+p
+{
+    padding: 3px;
+    margin-bottom: 21px;
+}
+
+
+.otp
+{
+    display: flex;
+    margin-bottom: 50px;
+}
+.otp input
+{
+    width: 1rem;
+    font-size: 24px;
+    margin: 6px ;
+    padding: 10px 25px;
+    background: none;
+    outline: none;
+    border: 2px solid rgb(83, 15, 185);
+    border-radius: 4px;
+    text-align: center;
+    color: rgb(128, 15, 49);
+    transition: all .1s ease;
+    
+}
+
+.otp input:focus
+{
+    border: 2px solid #9e11fb;
+    box-shadow: 0 0 4px 4px rgba(76, 2, 76, 0.807);
+}
+.spacing
+{
+    margin-right: 1rem !important;
+}
+ /* input,#q
+{
+    padding: 15px 55px;
+    background-color: rgb(26, 193, 106);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+    
+} */
+#q
+{
+    color: rgb(73, 3, 13);
+    background-color: rgb(59, 209, 64);
+    width: auto;
+    justify-content: center;
+    margin: 0px 26%;
+    padding: 9px;
+    cursor: pointer;
+    border-radius: 12px;
+   font-style: italic;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 27px;
+   transition: all .8s;       
+}
+
+input:hover
+{
+    
+    transition: all .2s;
+    transform: scale(.7);
+    color: #931bbb;
+    background-color: rgb(248, 248, 250);
+    border: 3px solid #30c728;
+    animation-delay: 2s;
+}
+#q
+{
+    transition: all .6s;
+    transform: scale(.6);
+    color: #b14802;
+ 
+}
+#q:hover
+{
+    transform: scale(.5);
+    transition: all .9s;
+    color: #f0eef1;
+    background-color: #0f0707;
+    border-radius:115px;
+}
+
+  
+  @media screen and (width<600px) {
+    body
+    {
+        width: 100vw;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+    }
+  }
+
+  @media screen and (width<480px) {
+    .otp
+    {
+        margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+ 
+    p 
+    {
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #q
+    {
+        margin: 5px auto;
+    }
+  }
