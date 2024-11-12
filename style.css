@@ -15,6 +15,7 @@ body
     height: 100vh;
     background-color: black;
     color: white;
+    position: relative;
 }
 h1
 {
@@ -46,40 +47,83 @@ p
 
 .otp
 {
-    display: flex;
-    margin-bottom: 50px;
+    width: fit-content;
+    /* height: 100%; */
+    color: cadetblue;
 }
-.otp input
+
+input
 {
-    width: 1rem;
-    font-size: 24px;
-    margin: 6px ;
-    padding: 10px 25px;
+    width: 50px;
+    height: 55px;
+    text-align: center;
+    /* padding: 5px ;  */
+    margin: 10px;
+    border-radius: 2x;
+    color: rgb(7, 139, 139);
+    font-weight: 550;
+    font-size: large;
+    border: 2px solid rgb(83, 15, 185);
+    box-shadow: 1px 1px 4px 4px rgba(76, 2, 76, 0.807);
+    outline: none;
+}
+
+.otp input:focus
+ {
+    font-size: xx-large;
+    color: rgb(11, 11, 11);
+    transition: all .3s;
+    outline: none;
+    transform: scale(.8);
+    border: 2px solid #9e11fb;
+    box-shadow: 10px 10px 40px 5px rgba(76, 2, 76, 0.807);
+    background-color: rgb(194, 193, 190);
+ }
+
+
+ .otp input:hover
+ {
+    font-size: xx-large;
+    color: rgb(3, 8, 78);
+    border: 3px solid rgb(35, 0, 35);
+    box-shadow: 2px 2px 4px 5px rgba(244, 239, 244, 0.807);
+    transition: all .1s ease;
+    transform: scale(.7);
+ }
+
+/* .otp input {
+    width: 3rem; 
+        font-size: 24px;
+    padding: 5px 15px; 
+    margin: 6px;
     background: none;
     outline: none;
     border: 2px solid rgb(83, 15, 185);
     border-radius: 4px;
     text-align: center;
-    color: rgb(128, 15, 49);
+    color:cyan; 
     transition: all .1s ease;
-    
 }
 
-.otp input:focus
-{
+.otp input:focus {
     border: 2px solid #9e11fb;
     box-shadow: 0 0 4px 4px rgba(76, 2, 76, 0.807);
+    color: rgb(152, 10, 10); 
 }
+ */
+
+
+
 .spacing
 {
     margin-right: 1rem !important;
 }
- /* input,#q
+ /* input
 {
     padding: 15px 55px;
-    background-color: rgb(26, 193, 106);
-    color: #fff;
-    font-size: 16px;
+    background-color: rgb(49, 57, 149);
+    color: #087b5e;
+    font-size: 106px;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -87,10 +131,15 @@ p
     transition: all .3s;
     
 } */
+
+
+
+
+
 #q
 {
-    color: rgb(73, 3, 13);
-    background-color: rgb(59, 209, 64);
+    color: rgb(80, 22, 6);
+    background-color: rgb(10, 102, 15);
     width: auto;
     justify-content: center;
     margin: 0px 26%;
@@ -98,28 +147,23 @@ p
     cursor: pointer;
     border-radius: 12px;
    font-style: italic;
-   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-family: 'poppins';
    font-size: 27px;
-   transition: all .8s;       
+   transition: all .8s;   
+   transform: scale(.6);    
 }
 
-input:hover
+/* input:hover
 {
     
     transition: all .2s;
     transform: scale(.7);
-    color: #931bbb;
+    color: #bdb7b4;
     background-color: rgb(248, 248, 250);
     border: 3px solid #30c728;
     animation-delay: 2s;
-}
-#q
-{
-    transition: all .6s;
-    transform: scale(.6);
-    color: #b14802;
- 
-}
+} */
+
 #q:hover
 {
     transform: scale(.5);
